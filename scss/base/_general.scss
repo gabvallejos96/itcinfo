@@ -1,0 +1,19 @@
+@import './variables';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+section {
+    word-wrap: break-word;
+}
+
+main{
+    margin-bottom: $footer-size;
+}
+

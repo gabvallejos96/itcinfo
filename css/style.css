@@ -3,15 +3,16 @@
   padding: 0;
   margin: 0; }
 
-html {
-  font-size: 62.5%; }
-
 section {
   word-wrap: break-word; }
 
 main {
   margin-bottom: 120px; }
 
+@font-face {
+  font-family: "comic sans";
+  src: url();
+  font-display: swap; }
 .backgroundHeader {
   background: #1a68f8;
   width: 100%;
@@ -69,7 +70,7 @@ section {
 
 .menu a {
   position: relative;
-  color: white; }
+  color: black; }
 
 .menu a::before {
   content: "";
@@ -78,7 +79,7 @@ section {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: white;
+  background: black;
   z-index: 1;
   transform: scaleX(0);
   transform-origin: left;
@@ -86,7 +87,7 @@ section {
 
 .menu a:hover::before {
   transform: scaleX(1);
-  color: white; }
+  color: black; }
 
 .topStatic {
   background: white;

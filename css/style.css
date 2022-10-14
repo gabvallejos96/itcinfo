@@ -381,6 +381,9 @@ section {
   .menu a {
     color: white; }
 
+  .nav-link:hover {
+    color: white; }
+
   .ubiContainer {
     display: grid;
     grid-template-columns: 4fr 8FR;

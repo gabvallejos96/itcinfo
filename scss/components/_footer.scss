@@ -1,19 +1,23 @@
 @import '../base/variables';
+@import '../base/mixin';
 
-.footerContainer {
-    display: grid;
+.footerContainer{
+    @include flex(flex, space-around, center); 
     height: 120px;
-    display: flex;
-    justify-content: space-around;
     width: 100%;
     background: $bg-footer-header-color;
-    align-items: center;
+}
+
+.margincenter{
+    left: auto;
+    right: auto;
 }
 
 .divFooter1 {
     width: 20%;
     top: auto;
     bottom: auto;
+    text-align: center;
 }
 
 .divFooter2 {
@@ -25,12 +29,10 @@
 }
 
 .parrafoFooter {
+    @include flex(flex, center, center); 
     font-family: 'Oswald', sans-serif;
     color: black;
     font-size: 18px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     left: auto;
     right: auto;
     margin: auto 0px;
@@ -48,9 +50,8 @@
 }
 
 .divf3 {
+    @include flex(flex, start, center); 
     height: 30%;
-    display: flex;
-    align-items: center;
     text-align: center;
     gap: 20px;
     margin-bottom: 5px;
